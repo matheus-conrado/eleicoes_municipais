@@ -1,23 +1,20 @@
 [tool.poetry]
-name = "eleicoes_municipais"
+name = "eleicoes-municipais"
 version = "0.1.0"
 description = ""
-authors = ["Matheus Conrado <matheus.conrado@outlook.com>"]
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "eleicoes_municipais"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.11"
+pandas = "^1.5.1"
 jupyter = "^1.0.0"
-notebook = "^6.5.1"
-jupyterlab = "^3.4.8"
-pandas = "^1.5.0"
-dask = "^2022.10.0"
-fastparquet = "^0.8.3"
-pyarrow = "^9.0.0"
-lxml = "^4.9.1"
-geopy = "^2.2.0"
+notebook = "^6.5.2"
+jupyterlab = "^3.5.0"
+sqlalchemy = "^1.4.43"
 
-[tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
